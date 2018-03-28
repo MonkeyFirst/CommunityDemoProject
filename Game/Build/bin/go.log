@@ -1,0 +1,1705 @@
+[Fri Mar 23 10:51:50 2018] INFO: Opened log file go.log
+[Fri Mar 23 10:51:50 2018] INFO: Created 3 worker threads
+[Fri Mar 23 10:51:50 2018] INFO: Added resource path D:/DEV/Game/Build/bin/CoreData/
+[Fri Mar 23 10:51:50 2018] INFO: Added resource path D:/DEV/Game/Build/bin/Data/
+[Fri Mar 23 10:51:50 2018] INFO: Added resource path D:/DEV/Game/Build/bin/MyData/
+[Fri Mar 23 10:51:51 2018] INFO: Set screen mode 800x600 windowed monitor 0
+[Fri Mar 23 10:51:51 2018] INFO: Initialized input
+[Fri Mar 23 10:51:51 2018] INFO: Initialized user interface
+[Fri Mar 23 10:51:51 2018] INFO: Initialized renderer
+[Fri Mar 23 10:51:51 2018] INFO: Set audio mode 44100 Hz stereo interpolated
+[Fri Mar 23 10:51:51 2018] INFO: Initialized engine
+[Fri Mar 23 10:51:51 2018] INFO: IMUI::Initialized
+ MotionManager: Constructor
+ MotionManager: Initialize
+ CameraManager: Constructor
+ CameraManager: Initialize
+ EnemyManager: Constructor
+ EnemyManager: Initialize
+ LineWorld: Constructor
+ LineWorld: Initialize
+ GameManager: Constructor
+ GameManager: Initialize
+ MainState: Constructor 
+ TextMenu: Constructor
+ LoadingState: Constructor
+ LevelState: Constructor 
+ TextMenu: Constructor
+ Go: RegisterFactory Ragdoll Follow HeadIndicator Bruce Thug
+ GameManager: ChangeState(LoadingState)
+ LoadingState: Enter
+ LoadingState ChangeSubState from 4294967295 to 0
+[Fri Mar 23 10:51:51 2018] INFO: Preloading resources from Scenes/animation.xml
+ InputManager: Update 1 (3)
+ CameraManager: Update 1 (3)
+ InputManager: Update 2 (3)
+ CameraManager: Update 2 (3)
+ InputManager: Update 3 (3)
+ CameraManager: Update 3 (3)
+ GameManager: OnSceneLoadFinished
+ LoadingState ChangeSubState from 0 to 1
+ MotionManager: Run
+ MotionManager: AddMotions START
+ MotionManager: Create_BM_Motions
+
+ MotionRig Constructor Objects/BATMAN/bruce/my_bruce.mdl
+[Fri Mar 23 10:51:52 2018] ERROR: No Octree component in scene, drawable will not render
+[Fri Mar 23 10:51:52 2018] ERROR: No Octree component in scene, drawable will not render
+ MotionManager: CreateThugMotions
+
+ MotionRig Constructor Objects/BATMAN/thug/thug.mdl
+[Fri Mar 23 10:51:52 2018] ERROR: No Octree component in scene, drawable will not render
+[Fri Mar 23 10:51:52 2018] ERROR: No Octree component in scene, drawable will not render
+ MotionManager: CreateThugCombatMotions
+ MotionManager: AddMotions END
+
+ MotionManager: LOADING_MOTIONS:
+ MotionManager: LOADING_ANIMATIONS
+ Animations: 8 
+ MotionManager: LOADING_FINISHED
+ MotionManager: AddTriggers START
+ Add_BM_AnimationTriggers
+ AddThugAnimationTriggers
+ AddThugCombatAnimationTriggers
+ MotionManager: AddTriggers END
+ MotionManager::PostProcess time-cost=2 ms
+*************************************************************************************
+Motion Process time-cost=2590023 ms num-of-motions=130 memory-use=24665 KB
+*************************************************************************************
+ LoadingState ChangeSubState from 1 to 2
+ GameManager: ChangeState(LevelState)
+ LoadingState: Exit
+ LevelState::Enter
+ LevelState: CreateScene 
+ EnemyManager: Start
+[Fri Mar 23 10:51:52 2018] INFO: Loading scene from Scenes/1.xml
+ EnemyManager: Stop
+ loading-scene XML --> time-cost 265 ms
+
+ CHARACTER: BATMAN/bruce/bruce.xml CLASS: Bruce
+ Player Constructor
+ Player: ObjectStart
+ Character: ObjectStart
+ sceneNode NAME: player
+ renderNode NAME: RenderNode
+ sceneNode POS: 0 2.5 -20
+ renderNode POS: 0 2.5 -20
+ BPos POS: 0 5.23488 -20
+[Fri Mar 23 10:51:52 2018] ERROR: Could not find resource player_Ragdoll_Pose
+ Create animation for player_Ragdoll_Pose
+ Character: Created Physics Capsule for player node
+ Bruce: AddStates
+ AttackState player max attack dist = 12.9504
+
+ forward attacks(closeNum=1): 
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Forward.ani impactDist=1.91632
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Forward_01.ani impactDist=2.95508
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Forward_02.ani impactDist=2.04141
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Forward_03.ani impactDist=1.91248
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Forward_04.ani impactDist=2.5158
+ AttackState Animations/BW_Attack/Attack_Close_Forward_02.ani impactDist=1.50816
+ AttackState Animations/BW_Attack/Attack_Close_Forward_03.ani impactDist=1.74097
+ AttackState Animations/BW_Attack/Attack_Close_Forward_06.ani impactDist=2.84797
+ AttackState Animations/BW_Attack/Attack_Close_Forward_08.ani impactDist=3.45283
+ AttackState Animations/BW_Attack/Attack_Close_Run_Forward.ani impactDist=1.86635
+ AttackState Animations/BW_Attack/Attack_Far_Forward.ani impactDist=7.2805
+ AttackState Animations/BW_Attack/Attack_Far_Forward_03.ani impactDist=8.99902
+ AttackState Animations/BW_Attack/Attack_Run_Far_Forward.ani impactDist=5.70138
+
+ right attacks(closeNum=2): 
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Right.ani impactDist=1.16682
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Right_01.ani impactDist=2.34456
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Right_02.ani impactDist=3.25249
+ AttackState Animations/BW_Attack/Attack_Close_Right.ani impactDist=1.17175
+ AttackState Animations/BW_Attack/Attack_Close_Right_01.ani impactDist=5.1846
+ AttackState Animations/BW_Attack/Attack_Close_Right_05.ani impactDist=2.96579
+ AttackState Animations/BW_Attack/Attack_Close_Right_07.ani impactDist=3.62422
+
+ back attacks(closeNum=1): 
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Back.ani impactDist=1.97086
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Back_01.ani impactDist=3.28055
+ AttackState Animations/BW_Attack/Attack_Close_Back.ani impactDist=1.96104
+ AttackState Animations/BW_Attack/Attack_Close_Back_01.ani impactDist=3.52117
+ AttackState Animations/BW_Attack/Attack_Close_Back_03.ani impactDist=3.51689
+ AttackState Animations/BW_Attack/Attack_Close_Back_04.ani impactDist=1.66561
+ AttackState Animations/BW_Attack/Attack_Close_Back_05.ani impactDist=3.41137
+ AttackState Animations/BW_Attack/Attack_Close_Back_06.ani impactDist=2.62615
+ AttackState Animations/BW_Attack/Attack_Close_Back_08.ani impactDist=2.93718
+ AttackState Animations/BW_Attack/Attack_Far_Back.ani impactDist=7.49907
+ AttackState Animations/BW_Attack/Attack_Far_Back_01.ani impactDist=3.9961
+
+ left attacks(closeNum=4): 
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Left.ani impactDist=1.59442
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Left_01.ani impactDist=1.48972
+ AttackState Animations/BW_Attack/Attack_Close_Weak_Left_02.ani impactDist=2.18505
+ AttackState Animations/BW_Attack/Attack_Close_Left.ani impactDist=1.56142
+ AttackState Animations/BW_Attack/Attack_Close_Left_02.ani impactDist=3.1346
+ AttackState Animations/BW_Attack/Attack_Close_Left_05.ani impactDist=2.54094
+ AttackState Animations/BW_Attack/Attack_Close_Left_06.ani impactDist=2.02194
+ AttackState Animations/BW_Attack/Attack_Close_Left_07.ani impactDist=2.13784
+ AttackState Animations/BW_Attack/Attack_Far_Left_02.ani impactDist=5.32421
+ AttackState Animations/BW_Attack/Attack_Far_Left_03.ani impactDist=8.54444
+ CharacterCounterState: Add_Counter_Animations from BM_TG_Counter/
+ Bruce-Transition Dist=0.200169
+ Bruce: AddStates End
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from NULL to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Player: SetTarget
+ FSM: Change State from NULL to StandState
+ Ragdoll: Constructor
+ Ragdoll: CreateRagdoll
+ player Ragdoll: SetPhysicsEnabled(false)
+ HeadIndicator: Constructor
+ HeadIndicator: ChangeState to 0
+
+ Parse Top Nodes from Scene Scenes/1.xml:
+ _node.name = floor
+ _node.name = zone
+ _node.name = thug2
+ _node.name = light
+ _node.name = thug3
+ _node.name = thug4
+ _node.name = Camera
+ _node.name = player
+
+ EnemyManager: CreateThug id = 1
+ CHARACTER: BATMAN/thug/thug.xml CLASS: Thug
+ Thug: ObjectStart
+ Character: ObjectStart
+ sceneNode NAME: thug_0
+ renderNode NAME: RenderNode
+ sceneNode POS: 2.40837 0 6.67463
+ renderNode POS: 2.40837 0 6.67463
+ BPos POS: 2.40837 2.6325 6.67463
+[Fri Mar 23 10:51:52 2018] ERROR: Could not find resource thug_0_Ragdoll_Pose
+ Create animation for thug_0_Ragdoll_Pose
+ Character: Created Physics Capsule for thug_0 node
+ CharacterCounterState: Add_Counter_Animations from TG_BM_Counter/
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from NULL to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 2.91836
+ FSM: Change State from NULL to StandState
+ Create Thug AI-Trigger Physics Capsule
+ Ragdoll: Constructor
+ Ragdoll: CreateRagdoll
+ thug_0 Ragdoll: SetPhysicsEnabled(false)
+ HeadIndicator: Constructor
+ HeadIndicator: ChangeState to 0
+
+ EnemyManager: CreateThug id = 2
+ CHARACTER: BATMAN/thug/thug.xml CLASS: Thug
+ Thug: ObjectStart
+ Character: ObjectStart
+ sceneNode NAME: thug_1
+ renderNode NAME: RenderNode
+ sceneNode POS: 8.35917 0 5.96874
+ renderNode POS: 8.35917 0 5.96874
+ BPos POS: 8.35917 2.6325 5.96874
+[Fri Mar 23 10:51:52 2018] ERROR: Could not find resource thug_1_Ragdoll_Pose
+ Create animation for thug_1_Ragdoll_Pose
+ Character: Created Physics Capsule for thug_1 node
+ CharacterCounterState: Add_Counter_Animations from TG_BM_Counter/
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from NULL to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 2.0365
+ FSM: Change State from NULL to StandState
+ Create Thug AI-Trigger Physics Capsule
+ Ragdoll: Constructor
+ Ragdoll: CreateRagdoll
+ thug_1 Ragdoll: SetPhysicsEnabled(false)
+ HeadIndicator: Constructor
+ HeadIndicator: ChangeState to 0
+
+ EnemyManager: CreateThug id = 3
+ CHARACTER: BATMAN/thug/thug.xml CLASS: Thug
+ Thug: ObjectStart
+ Character: ObjectStart
+ sceneNode NAME: thug_2
+ renderNode NAME: RenderNode
+ sceneNode POS: -3.72608 0 6.34706
+ renderNode POS: -3.72608 0 6.34706
+ BPos POS: -3.72608 2.6325 6.34706
+[Fri Mar 23 10:51:52 2018] ERROR: Could not find resource thug_2_Ragdoll_Pose
+ Create animation for thug_2_Ragdoll_Pose
+ Character: Created Physics Capsule for thug_2 node
+ CharacterCounterState: Add_Counter_Animations from TG_BM_Counter/
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from NULL to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 thinkTime = 2.94064
+ FSM: Change State from NULL to StandState
+ Create Thug AI-Trigger Physics Capsule
+ Ragdoll: Constructor
+ Ragdoll: CreateRagdoll
+ thug_2 Ragdoll: SetPhysicsEnabled(false)
+ HeadIndicator: Constructor
+ HeadIndicator: ChangeState to 0
+ CameraManager: Add 5 Controllers
+ ThirdPersonCameraController: Enter
+ CameraManager: Set current ThirdPerson Controller
+ Follow constructor
+ CreateScene() --> total time-cost 319 ms.
+ LevelState: Switch State from -1 to 0
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to TurnState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 1
+ thug_1 state=TurnState pick Animations/TG_Combat/135_Turn_Left.ani
+ Motion: InnerStart - Animations/TG_Combat/135_Turn_Left.ani
+ FSM: Change State from StandState to TurnState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from StandState to FallState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ FSM: Change State from StandState to FallState
+ Character: thug_1 HandleAnimationTrigger P_NAME = 135_Turn_Left
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (TurnState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from FallState to LandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ FSM: Change State from FallState to LandState
+ Character: thug_1 HandleAnimationTrigger P_NAME = 135_Turn_Left
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (TurnState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from TurnState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.903226
+ FSM: Change State from TurnState to StandState
+ Character: thug_1 HandleAnimationTrigger P_NAME = 135_Turn_Left
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (StandState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from LandState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Player: SetTarget
+ FSM: Change State from LandState to StandState
+ LevelState: Switch State from 0 to 1
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ StandState Stand->Move|Turn index = 0 hold-frames = 1 hold-time = 0.033858
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from StandState to WalkState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/BM_Movement/Walk_Forward.ani
+ Player: SetTarget
+ FSM: Change State from StandState to WalkState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ Player: player Do--Attack--->
+ player enemyAngle=5.36409 targetAngle=4.32754 diffAngle=-1.03656
+ Enemy thug_0 dist=22.0801 diffAngle=-1.03656 score=29 (Player::CommonPickEnemy)
+ player enemyAngle=19.0991 targetAngle=4.32754 diffAngle=-14.7716
+ Enemy thug_1 dist=15.7211 diffAngle=-14.7716 score=30 (Player::CommonPickEnemy)
+ player enemyAngle=-8.91314 targetAngle=4.32754 diffAngle=13.2407
+ Enemy thug_2 dist=21.9416 diffAngle=13.2407 score=27 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_1
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from WalkState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = 15.2547
+ AttackStatePlayer attack toEnenmyDistance = 15.7211(12.7211,21.7211)
+ AttackState Attack bestIndex=12 index_start=-1 index_num=0
+ AttackState PlayerAttack dir=-1 index=-1 Pick attack motion = Animations/BW_Attack/Attack_Run_Far_Forward.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Run_Far_Forward.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from WalkState to AttackState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_0 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_0 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ Character: thug_2 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_2 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState targetDistance=2.29429 punchDist=0.00218868
+ Motion: InnerStart - Animations/TG_Combat/Attack_Kick_02.ani
+ AttackState Thug Pick attack motion = Animations/TG_Combat/Attack_Kick_02.ani
+ FSM: Change State from RunState to AttackState
+ Character: thug_0 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_0 CharacterState: OnFootStep
+ Character: thug_0 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_0 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ Character: thug_2 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_2 CharacterState: OnFootStep
+ Character: thug_2 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_2 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_1 OnDamage!!!
+ thug_1 OnDamage: pos = 3.8393 3.45202 -4.24842 dir = -0.438803 0 -0.898583 damage = 18 weak = true
+ thug_1 Creating Blood_Splat decal!
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from AttackState to HitState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 ThugAttackState: Exit to HitState and remove FLAGS_COUNTER
+ HeadIndicator: ChangeState to 0
+ MultiMotionState: PickIndex = 0
+ thug_1 state=HitState pick Animations/TG_HitReaction/HitReaction_Right.ani
+ Motion: InnerStart - Animations/TG_HitReaction/HitReaction_Right.ani
+ FSM: Change State from AttackState to HitState
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_4.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from RunState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState targetDistance=2.59258 punchDist=0.00218868
+ Motion: InnerStart - Animations/TG_Combat/Attack_Kick.ani
+ AttackState Thug Pick attack motion = Animations/TG_Combat/Attack_Kick.ani
+ FSM: Change State from RunState to AttackState
+ Character: thug_2 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_2 CharacterState: OnFootStep
+ Character: thug_2 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_2 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ Character: thug_0 HandleAnimationTrigger P_NAME = Attack_Kick
+ thug_0 ThugAttackState: OnAnimationTrigger TIME_SCALE
+ thug_0 GameObject: SetTimeScale: 0.3
+ Character: thug_0 HandleAnimationTrigger P_NAME = Attack_Kick
+ HeadIndicator: ChangeState to 1
+ thug_0 ThugAttackState: OnAnimationTrigger COUNTER_CHECK add FLAGS_COUNTER
+ Player: player Do--Attack--->
+ player enemyAngle=-10.3056 targetAngle=-7.78598 diffAngle=2.51964
+ Enemy thug_0 dist=1.07223 diffAngle=2.51964 score=60 (Player::CommonPickEnemy)
+ player enemyAngle=12.0696 targetAngle=-7.78598 diffAngle=-19.8556
+ Enemy thug_1 dist=2.86047 diffAngle=-19.8556 score=39 (Player::CommonPickEnemy)
+ player enemyAngle=-39.4924 targetAngle=-7.78598 diffAngle=31.7064
+ Enemy thug_2 dist=1.72059 diffAngle=31.7064 score=42 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_0
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 1 diff = 54.9272
+ AttackStatePlayer attack toEnenmyDistance = 1.07223(0,7.07223)
+ AttackState Attack bestIndex=5 index_start=0 index_num=7
+ AttackState PlayerAttack dir=1 index=5 Pick attack motion = Animations/BW_Attack/Attack_Close_Right_05.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Right_05.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 1 diff = 54.9272
+ AttackStatePlayer attack toEnenmyDistance = 1.07223(0,7.07223)
+ AttackState Attack bestIndex=1 index_start=0 index_num=7
+ AttackState PlayerAttack dir=1 index=1 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Right_01.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Right_01.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+ GameObject: HandleSoundFinished end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RunState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState targetDistance=0.976379 punchDist=0.00218868
+ Motion: InnerStart - Animations/TG_Combat/Attack_Punch_02.ani
+ AttackState Thug Pick attack motion = Animations/TG_Combat/Attack_Punch_02.ani
+ FSM: Change State from RunState to AttackState
+ Character: thug_2 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_2 CharacterState (AttackState): OnAnimationTrigger FOOT_STEP
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_0 OnDamage!!!
+ thug_0 OnDamage: pos = 3.83024 3.59905 -4.49775 dir = 0.321539 0 -0.946896 damage = 27 weak = true
+ thug_0 Creating Blood_Splat decal!
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from AttackState to HitState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 ThugAttackState: Exit to HitState and remove FLAGS_COUNTER
+ thug_0 GameObject: SetTimeScale: 1
+ HeadIndicator: ChangeState to 0
+ MultiMotionState: PickIndex = 0
+ thug_0 state=HitState pick Animations/TG_HitReaction/HitReaction_Right.ani
+ Motion: InnerStart - Animations/TG_HitReaction/HitReaction_Right.ani
+ FSM: Change State from AttackState to HitState
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_1.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ Character: thug_2 HandleAnimationTrigger P_NAME = Attack_Punch_02
+ thug_2 ThugAttackState: OnAnimationTrigger TIME_SCALE
+ thug_2 GameObject: SetTimeScale: 0.3
+ Character: thug_2 HandleAnimationTrigger P_NAME = Attack_Punch_02
+ HeadIndicator: ChangeState to 1
+ thug_2 ThugAttackState: OnAnimationTrigger COUNTER_CHECK add FLAGS_COUNTER
+ GameObject: HandleSoundFinished end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ thug_0 counter distance too long 31.1354
+ thug_1 can not be countered
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ PlayerCounterState: Enter (player) lastState = AttackState
+ PlayerCounter-> counterEnemies len = 1
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from AttackState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 ThugAttackState: Exit to CounterState and remove FLAGS_COUNTER
+ thug_2 GameObject: SetTimeScale: 1
+ HeadIndicator: ChangeState to 0
+ CharacterCounterState: Enter (thug_2) lastState = AttackState
+ FSM: Change State from AttackState to CounterState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from CounterState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ CharacterCounterState: GetCounterMotions (player)
+ CharacterCounterState: GetCounterMotions (thug_2)
+ PlayerCounterState: intCache.Size = 0
+ Counter-align angle-diff = 30.9597 isBack = false name: Animations/BM_TG_Counter/Counter_Arm_Front_Weak_02.ani
+ thug_2 CharacterCounterState: ChangeSubState from 0 to 1
+ player CharacterCounterState: StartAligning
+ AlignState CharacterAlign--start duration=0.2
+ AlignState align-animation : Animations/BM_Movement/Walk_Forward.ani
+ PlayerCounterState: Enter time-cost = 2
+ FSM: Change State from AttackState to CounterState
+ PlayerCounterState: Exit (player) nextState = AlignState
+ CharacterCounterState: Exit (player) nextState = AlignState
+ FSM: Change State from CounterState to AlignState
+ AlignState player On_Align_Finished-- at: 2595888
+ PlayerCounterState: Enter (player) lastState = AlignState
+ player start counter motion Animations/BM_TG_Counter/Counter_Arm_Front_Weak_02.ani
+ player CharacterCounterState: ChangeSubState from 0 to 2
+ Motion: InnerStart - Animations/BM_TG_Counter/Counter_Arm_Front_Weak_02.ani
+ thug_2 start counter motion Animations/TG_BM_Counter/Counter_Arm_Front_Weak_02.ani
+ thug_2 CharacterCounterState: ChangeSubState from 1 to 2
+ Motion: InnerStart - Animations/TG_BM_Counter/Counter_Arm_Front_Weak_02.ani
+ PlayerCounterState: Enter time-cost = 1
+ FSM: Change State from AlignState to CounterState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Character: player ChangeState_Hash from AlignState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from HitState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.446204
+ FSM: Change State from HitState to StandState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.726661
+ FSM: Change State from RunState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from HitState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 0.749687
+ FSM: Change State from HitState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.640095
+ FSM: Change State from RunState to StandState
+ Character: thug_2 HandleAnimationTrigger P_NAME = Counter_Arm_Front_Weak_02
+ thug_2 ThugCounterState: OnAnimationTrigger READY_TO_FIGHT
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_0 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_0 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 0.434004
+ FSM: Change State from RunState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_0 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_0 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.480377
+ FSM: Change State from RunState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 0.954772
+ FSM: Change State from RunState to StandState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState (StandState): OnAnimationTrigger FOOT_STEP
+ playerCommonStateFinishedOnGroud crouch=falseTo->Move|Turn hold-frames=17 hold-time=0.568931
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from CounterState to WalkState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ PlayerCounterState: Exit (player) nextState = WalkState
+ CharacterCounterState: Exit (player) nextState = WalkState
+ Motion: InnerStart - Animations/BM_Movement/Walk_Forward.ani
+ Player: SetTarget
+ FSM: Change State from CounterState to WalkState
+ Player: player Do--Attack--->
+ player enemyAngle=-7.51053 targetAngle=-16.9971 diffAngle=-9.4866
+ Enemy thug_0 dist=1.14844 diffAngle=-9.4866 score=42 (Player::CommonPickEnemy)
+ player enemyAngle=29.905 targetAngle=-16.9971 diffAngle=-46.9021
+ Enemy thug_1 dist=0.57918 diffAngle=-46.9021 score=31 (Player::CommonPickEnemy)
+ player enemyAngle=16.833 targetAngle=-16.9971 diffAngle=-33.8302
+ Enemy thug_2 dist=3.2856 diffAngle=-33.8302 score=32 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_0
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from WalkState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = 27.4674
+ AttackStatePlayer attack toEnenmyDistance = 1.14844(0,7.14844)
+ AttackState Attack bestIndex=2 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=2 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Forward_02.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Forward_02.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from WalkState to AttackState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState targetDistance=0.24626 punchDist=0.00218868
+ Motion: InnerStart - Animations/TG_Combat/Attack_Punch_02.ani
+ AttackState Thug Pick attack motion = Animations/TG_Combat/Attack_Punch_02.ani
+ FSM: Change State from RunState to AttackState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from CounterState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ CharacterCounterState: Exit (thug_2) nextState = StandState
+ thug_2 thinkTime = 0.88551
+ FSM: Change State from CounterState to StandState
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_0 OnDamage!!!
+ thug_0 OnDamage: pos = 0.512832 3.16324 -3.65308 dir = 0.104682 0 -0.994506 damage = 16 weak = true
+ thug_0 Creating Blood_Splat decal!
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to HitState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 0
+ thug_0 state=HitState pick Animations/TG_HitReaction/HitReaction_Right.ani
+ Motion: InnerStart - Animations/TG_HitReaction/HitReaction_Right.ani
+ FSM: Change State from StandState to HitState
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_2.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ Character: thug_1 HandleAnimationTrigger P_NAME = Attack_Punch_02
+ thug_1 ThugAttackState: OnAnimationTrigger TIME_SCALE
+ thug_1 GameObject: SetTimeScale: 0.3
+ Character: thug_1 HandleAnimationTrigger P_NAME = Attack_Punch_02
+ HeadIndicator: ChangeState to 1
+ thug_1 ThugAttackState: OnAnimationTrigger COUNTER_CHECK add FLAGS_COUNTER
+ GameObject: HandleSoundFinished end
+ thug_0 counter distance too long 34.8355
+ thug_2 can not be countered
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ PlayerCounterState: Enter (player) lastState = AttackState
+ PlayerCounter-> counterEnemies len = 1
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from AttackState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 ThugAttackState: Exit to CounterState and remove FLAGS_COUNTER
+ thug_1 GameObject: SetTimeScale: 1
+ HeadIndicator: ChangeState to 0
+ CharacterCounterState: Enter (thug_1) lastState = AttackState
+ FSM: Change State from AttackState to CounterState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from CounterState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ CharacterCounterState: GetCounterMotions (player)
+ CharacterCounterState: GetCounterMotions (thug_1)
+ PlayerCounterState: intCache.Size = 0
+ Counter-align angle-diff = 64.4921 isBack = false name: Animations/BM_TG_Counter/Counter_Arm_Front_Weak_02.ani
+ thug_1 CharacterCounterState: ChangeSubState from 0 to 1
+ player CharacterCounterState: StartAligning
+ AlignState CharacterAlign--start duration=0.2
+ AlignState align-animation : Animations/BM_Movement/Walk_Forward.ani
+ PlayerCounterState: Enter time-cost = 2
+ FSM: Change State from AttackState to CounterState
+ PlayerCounterState: Exit (player) nextState = AlignState
+ CharacterCounterState: Exit (player) nextState = AlignState
+ FSM: Change State from CounterState to AlignState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ AlignState player On_Align_Finished-- at: 2600204
+ PlayerCounterState: Enter (player) lastState = AlignState
+ player start counter motion Animations/BM_TG_Counter/Counter_Arm_Front_Weak_02.ani
+ player CharacterCounterState: ChangeSubState from 0 to 2
+ Motion: InnerStart - Animations/BM_TG_Counter/Counter_Arm_Front_Weak_02.ani
+ thug_1 start counter motion Animations/TG_BM_Counter/Counter_Arm_Front_Weak_02.ani
+ thug_1 CharacterCounterState: ChangeSubState from 1 to 2
+ Motion: InnerStart - Animations/TG_BM_Counter/Counter_Arm_Front_Weak_02.ani
+ PlayerCounterState: Enter time-cost = 1
+ FSM: Change State from AlignState to CounterState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Character: player ChangeState_Hash from AlignState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 thinkTime = 0.342059
+ FSM: Change State from RunState to StandState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StandState to StepMoveState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 0
+ thug_2 state=StepMoveState pick Animations/TG_Combat/Step_Forward.ani
+ Motion: InnerStart - Animations/TG_Combat/Step_Forward.ani
+ FSM: Change State from StandState to StepMoveState
+ Character: thug_2 HandleAnimationTrigger P_NAME = Step_Forward
+ thug_2 CharacterState: OnFootStep
+ Character: thug_2 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_2 CharacterState (StepMoveState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from HitState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 0.263367
+ FSM: Change State from HitState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_0 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_0 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StepMoveState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 thinkTime = 0.378636
+ FSM: Change State from StepMoveState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 0.393536
+ FSM: Change State from RunState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StandState to StepMoveState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 2
+ thug_2 state=StepMoveState pick Animations/TG_Combat/Step_Back.ani
+ Motion: InnerStart - Animations/TG_Combat/Step_Back.ani
+ FSM: Change State from StandState to StepMoveState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Counter_Arm_Front_Weak_02
+ thug_1 ThugCounterState: OnAnimationTrigger READY_TO_FIGHT
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_0 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_0 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ Character: thug_2 HandleAnimationTrigger P_NAME = Step_Back
+ thug_2 CharacterState: OnFootStep
+ Character: thug_2 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_2 CharacterState (StepMoveState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from RunState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 thinkTime = 0.751015
+ FSM: Change State from RunState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StepMoveState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 thinkTime = 0.827258
+ FSM: Change State from StepMoveState to StandState
+ playerCommonStateFinishedOnGroud crouch=falseTo->Move|Turn hold-frames=50 hold-time=1.67549
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from CounterState to WalkState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ PlayerCounterState: Exit (player) nextState = WalkState
+ CharacterCounterState: Exit (player) nextState = WalkState
+ Motion: InnerStart - Animations/BM_Movement/Walk_Forward.ani
+ Player: SetTarget
+ FSM: Change State from CounterState to WalkState
+ Player: player Do--Attack--->
+ player enemyAngle=-1.46017 targetAngle=-3.83227 diffAngle=-2.3721
+ Enemy thug_0 dist=0.40161 diffAngle=-2.3721 score=43 (Player::CommonPickEnemy)
+ Enemy thug_1 diffAngle=-92.8102 too large (Player::CommonPickEnemy)
+ player enemyAngle=43.1961 targetAngle=-3.83227 diffAngle=-47.0284
+ Enemy thug_2 dist=1.47422 diffAngle=-47.0284 score=31 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_0
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from WalkState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = -11.0053
+ AttackStatePlayer attack toEnenmyDistance = 0.40161(0,6.40161)
+ AttackState Attack bestIndex=5 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=5 Pick attack motion = Animations/BW_Attack/Attack_Close_Forward_02.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Forward_02.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from WalkState to AttackState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from CounterState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ CharacterCounterState: Exit (thug_1) nextState = StandState
+ thug_1 thinkTime = 0.536203
+ FSM: Change State from CounterState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StandState to StepMoveState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 0
+ thug_2 state=StepMoveState pick Animations/TG_Combat/Step_Forward.ani
+ Motion: InnerStart - Animations/TG_Combat/Step_Forward.ani
+ FSM: Change State from StandState to StepMoveState
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_0 OnDamage!!!
+ thug_0 OnDamage: pos = 1.28629 3.72779 -0.538271 dir = 0.0696732 0 -0.99757 damage = 25 weak = false
+ thug_0 Creating Blood_Splat decal!
+ Character: thug_0 MakeMeRagdoll
+ Character: thug_0 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from StandState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 CharacterRagdollState: Enter
+ FSM: Change State from StandState to RagdollState
+ thug_0 CharacterState (StandState): OnAnimationTrigger RAGDOLL_START
+ thug_0 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_0 Ragdoll: velocityRequest = -1.15249 6.79835 16.5012 hitPosition = 1.28629 3.72779 -0.538271
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_6.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ thug_0 Ragdoll ChangeState from 0 to 2
+ thug_0 Ragdoll: SetPhysicsEnabled(true)
+ thug_0 Ragdoll -- Bip01_Head y_diff = 0.0972769
+ thug_0 Ragdoll -- BRot y_diff = 1.3612
+ thug_0 Ragdoll -- Bip01_Spine1 y_diff = 0.857539
+ thug_0 Ragdoll -- Bip01_L_Thigh y_diff = 1.37542
+ thug_0 Ragdoll -- Bip01_R_Thigh y_diff = 1.34699
+ thug_0 Ragdoll -- Bip01_L_Calf y_diff = 2.36641
+ thug_0 Ragdoll -- Bip01_R_Calf y_diff = 2.31912
+ thug_0 Ragdoll -- Bip01_L_UpperArm y_diff = 0.380452
+ thug_0 Ragdoll -- Bip01_R_UpperArm y_diff = 0.139783
+ thug_0 Ragdoll -- Bip01_L_Forearm y_diff = 1.07963
+ thug_0 Ragdoll -- Bip01_R_Forearm y_diff = 0.418952
+ Player: player Do--Attack--->
+ Enemy thug_0 no flag: 1 (Player::CommonPickEnemy)
+ Enemy thug_1 diffAngle=-92.499 too large (Player::CommonPickEnemy)
+ player enemyAngle=61.9073 targetAngle=2.53562 diffAngle=-59.3717
+ Enemy thug_2 dist=-0.0510752 diffAngle=-59.3717 score=39 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_2
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = -34.683
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=9 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=9 Pick attack motion = Animations/BW_Attack/Attack_Close_Run_Forward.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Run_Forward.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 0 diff = -34.683
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=8 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=8 Pick attack motion = Animations/BW_Attack/Attack_Close_Forward_08.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Forward_08.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+ Character: thug_2 HandleAnimationTrigger P_NAME = Step_Forward
+ thug_2 CharacterState: OnFootStep
+ Character: thug_2 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_2 CharacterState (StepMoveState): OnAnimationTrigger FOOT_STEP
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+ Character: thug_1 HandleAnimationTrigger P_NAME = Run_Forward_Combat
+ thug_1 CharacterState (RunState): OnAnimationTrigger FOOT_STEP
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: HandleSoundFinished end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState targetDistance=0.249429 punchDist=0.00218868
+ Motion: InnerStart - Animations/TG_Combat/Attack_Punch.ani
+ AttackState Thug Pick attack motion = Animations/TG_Combat/Attack_Punch.ani
+ FSM: Change State from RunState to AttackState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StepMoveState to TurnState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 0
+ thug_2 state=TurnState pick Animations/TG_Combat/135_Turn_Right.ani
+ Motion: InnerStart - Animations/TG_Combat/135_Turn_Right.ani
+ FSM: Change State from StepMoveState to TurnState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ AttackState changeSubState from 0 to 1
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from TurnState to StepMoveState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 2
+ thug_2 state=StepMoveState pick Animations/TG_Combat/Step_Back.ani
+ Motion: InnerStart - Animations/TG_Combat/Step_Back.ani
+ FSM: Change State from TurnState to StepMoveState
+ AttackState changeSubState from 1 to 2
+ AttackState thug_2 OnDamage!!!
+ thug_2 OnDamage: pos = 0.681821 4.42603 -3.33438 dir = -0.884602 0 -0.466347 damage = 14 weak = false
+ thug_2 Creating Blood_Splat decal!
+ Character: thug_2 MakeMeRagdoll
+ Character: thug_2 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StepMoveState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 CharacterRagdollState: Enter
+ FSM: Change State from StepMoveState to RagdollState
+ thug_2 CharacterState (StepMoveState): OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: velocityRequest = 13.4447 7.56746 7.0878 hitPosition = 0.681821 4.42603 -3.33438
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_19.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ thug_2 Ragdoll ChangeState from 0 to 2
+ thug_2 Ragdoll: SetPhysicsEnabled(true)
+ thug_2 Ragdoll -- Bip01_Head y_diff = 0.543353
+ thug_2 Ragdoll -- BRot y_diff = 2.19962
+ thug_2 Ragdoll -- Bip01_Spine1 y_diff = 1.67325
+ thug_2 Ragdoll -- Bip01_L_Thigh y_diff = 2.2006
+ thug_2 Ragdoll -- Bip01_R_Thigh y_diff = 2.19864
+ thug_2 Ragdoll -- Bip01_L_Calf y_diff = 3.11881
+ thug_2 Ragdoll -- Bip01_R_Calf y_diff = 3.20123
+ thug_2 Ragdoll -- Bip01_L_UpperArm y_diff = 0.797633
+ thug_2 Ragdoll -- Bip01_R_UpperArm y_diff = 0.770324
+ thug_2 Ragdoll -- Bip01_L_Forearm y_diff = 1.52611
+ thug_2 Ragdoll -- Bip01_R_Forearm y_diff = 1.45743
+ Character: thug_1 HandleAnimationTrigger P_NAME = Attack_Punch
+ thug_1 ThugAttackState: OnAnimationTrigger TIME_SCALE
+ thug_1 GameObject: SetTimeScale: 0.3
+ Character: thug_1 HandleAnimationTrigger P_NAME = Attack_Punch
+ HeadIndicator: ChangeState to 1
+ thug_1 ThugAttackState: OnAnimationTrigger COUNTER_CHECK add FLAGS_COUNTER
+ Player: player Do--Attack--->
+ Enemy thug_0 no flag: 1 (Player::CommonPickEnemy)
+ player enemyAngle=93.52 targetAngle=55.6054 diffAngle=-37.9146
+ Enemy thug_1 dist=-0.117039 diffAngle=-37.9146 score=55 (Player::CommonPickEnemy)
+ player enemyAngle=62.2026 targetAngle=55.6054 diffAngle=-6.59719
+ Enemy thug_2 dist=-0.274308 diffAngle=-6.59719 score=43 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_1
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 1 diff = 134.024
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=6 index_start=0 index_num=7
+ AttackState PlayerAttack dir=1 index=6 Pick attack motion = Animations/BW_Attack/Attack_Close_Right_07.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Right_07.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 1 diff = 134.024
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Repeat Attack index index_num=7
+ AttackState Attack bestIndex=0 index_start=0 index_num=7
+ AttackState PlayerAttack dir=1 index=0 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Right.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Right.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+ GameObject: HandleSoundFinished end
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_1 OnDamage!!!
+ thug_1 OnDamage: pos = 1.74691 4.17205 -2.25133 dir = -0.998113 0 0.0613966 damage = 18 weak = false
+ thug_1 Creating Blood_Splat decal!
+ Character: thug_1 MakeMeRagdoll
+ Character: thug_1 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from AttackState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 ThugAttackState: Exit to RagdollState and remove FLAGS_COUNTER
+ thug_1 GameObject: SetTimeScale: 1
+ HeadIndicator: ChangeState to 0
+ thug_1 CharacterRagdollState: Enter
+ FSM: Change State from AttackState to RagdollState
+ thug_1 CharacterState (AttackState): OnAnimationTrigger RAGDOLL_START
+ thug_1 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_1 Ragdoll: velocityRequest = 17.0177 8.20115 -1.0468 hitPosition = 1.74691 4.17205 -2.25133
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_10.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ thug_1 Ragdoll ChangeState from 0 to 2
+ thug_1 Ragdoll: SetPhysicsEnabled(true)
+ thug_1 Ragdoll -- Bip01_Head y_diff = 0.438647
+ thug_1 Ragdoll -- BRot y_diff = 2.10153
+ thug_1 Ragdoll -- Bip01_Spine1 y_diff = 1.60262
+ thug_1 Ragdoll -- Bip01_L_Thigh y_diff = 2.14358
+ thug_1 Ragdoll -- Bip01_R_Thigh y_diff = 2.05948
+ thug_1 Ragdoll -- Bip01_L_Calf y_diff = 2.94368
+ thug_1 Ragdoll -- Bip01_R_Calf y_diff = 2.88351
+ thug_1 Ragdoll -- Bip01_L_UpperArm y_diff = 0.559477
+ thug_1 Ragdoll -- Bip01_R_UpperArm y_diff = 0.725977
+ thug_1 Ragdoll -- Bip01_L_Forearm y_diff = 0.862508
+ thug_1 Ragdoll -- Bip01_R_Forearm y_diff = 1.49287
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: HandleSoundFinished end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ AttackState finish attack movemont in sub state = 2
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Player: SetTarget
+ FSM: Change State from AttackState to StandState
+ thug_0 Ragdoll ChangeState from 2 to 0
+ thug_0 Ragdoll: SetPhysicsEnabled(false)
+ thug_0 Ragdoll: pelvis_up = 0.00351401 0.99992 0.0121723
+ thug_0 Ragdoll: getUpIndex = 0
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ thug_0 CharacterRagdollState: Go to GetUpState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 Character: ChangeState from RagdollState to GetUpState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_0 ThugGetUpState: Enter
+ thug_0 CharacterGetUpState: Enter
+ MultiMotionState: PickIndex = 0
+ CharacterGetUpState: Enter animationName = Animations/TG_Getup/GetUp_Back.ani
+ FSM: Change State from RagdollState to GetUpState
+ Motion: InnerStart - Animations/TG_Getup/GetUp_Back.ani
+ thug_2 Ragdoll ChangeState from 2 to 0
+ thug_2 Ragdoll: SetPhysicsEnabled(false)
+ thug_2 Ragdoll: pelvis_up = 0.0160598 0.999863 0.00397804
+ thug_2 Ragdoll: getUpIndex = 0
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ thug_2 CharacterRagdollState: Go to GetUpState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RagdollState to GetUpState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 ThugGetUpState: Enter
+ thug_2 CharacterGetUpState: Enter
+ MultiMotionState: PickIndex = 0
+ CharacterGetUpState: Enter animationName = Animations/TG_Getup/GetUp_Back.ani
+ FSM: Change State from RagdollState to GetUpState
+ Motion: InnerStart - Animations/TG_Getup/GetUp_Back.ani
+ StandState Stand->Move|Turn index = 3 hold-frames = 1 hold-time = 0.033334
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from StandState to StandToWalkState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Player: SetTarget
+ MultiMotionState: PickIndex = 2
+ player state=StandToWalkState pick Animations/BM_Movement/Stand_To_Walk_Right_180.ani
+ Motion: InnerStart - Animations/BM_Movement/Stand_To_Walk_Right_180.ani
+ StandToWalkState motionTargetAngle=125.51 targetRotation=-14.8746 diff=-140.384 turnSpeed=-206.447
+ FSM: Change State from StandState to StandToWalkState
+ thug_1 Ragdoll ChangeState from 2 to 0
+ thug_1 Ragdoll: SetPhysicsEnabled(false)
+ thug_1 Ragdoll: pelvis_up = 0.0189284 0.999777 0.00935174
+ thug_1 Ragdoll: getUpIndex = 0
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ thug_1 CharacterRagdollState: Go to GetUpState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RagdollState to GetUpState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 ThugGetUpState: Enter
+ thug_1 CharacterGetUpState: Enter
+ MultiMotionState: PickIndex = 0
+ CharacterGetUpState: Enter animationName = Animations/TG_Getup/GetUp_Back.ani
+ FSM: Change State from RagdollState to GetUpState
+ Motion: InnerStart - Animations/TG_Getup/GetUp_Back.ani
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from StandToWalkState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Player: SetTarget
+ FSM: Change State from StandToWalkState to StandState
+ StandState Stand->Move|Turn index = 0 hold-frames = 1 hold-time = 0.0334295
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from StandState to WalkState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/BM_Movement/Walk_Forward.ani
+ Player: SetTarget
+ FSM: Change State from StandState to WalkState
+ Character: thug_0 HandleAnimationTrigger P_NAME = GetUp_Back
+ thug_0 ThugGetUpState: OnAnimationTrigger READY_TO_FIGHT
+ Player: player Do--Attack--->
+ player enemyAngle=-15.261 targetAngle=-12.5119 diffAngle=2.74911
+ Enemy thug_0 dist=1.20556 diffAngle=2.74911 score=38 (Player::CommonPickEnemy)
+ Enemy thug_1 diffAngle=-119.671 too large (Player::CommonPickEnemy)
+ Enemy thug_2 no flag: 1 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_0
+ player CommonPicKEnemy() time-cost = 0 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from WalkState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = -2.13627
+ AttackStatePlayer attack toEnenmyDistance = 1.20556(0,7.20556)
+ AttackState Attack bestIndex=2 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=2 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Forward_02.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Forward_02.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from WalkState to AttackState
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_0 OnDamage!!!
+ thug_0 OnDamage: pos = -0.0997745 3.16928 0.76861 dir = 0.266191 0 -0.96392 damage = 29 weak = false
+ thug_0 Creating Blood_Splat decal!
+ Character: thug_0 MakeMeRagdoll
+ Character: thug_0 HandleAnimationTrigger P_NAME = 
+ thug_0 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_0 Ragdoll: velocityRequest = -4.88547 7.91748 17.6911 hitPosition = -0.0997745 3.16928 0.76861
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_31.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ thug_0 Ragdoll ChangeState from 0 to 2
+ thug_0 Ragdoll: SetPhysicsEnabled(true)
+ thug_0 Ragdoll -- Bip01_Head y_diff = 0.62243
+ thug_0 Ragdoll -- BRot y_diff = 0.986836
+ thug_0 Ragdoll -- Bip01_Spine1 y_diff = 0.462955
+ thug_0 Ragdoll -- Bip01_L_Thigh y_diff = 0.985399
+ thug_0 Ragdoll -- Bip01_R_Thigh y_diff = 0.988275
+ thug_0 Ragdoll -- Bip01_L_Calf y_diff = 2.00583
+ thug_0 Ragdoll -- Bip01_R_Calf y_diff = 1.98528
+ thug_0 Ragdoll -- Bip01_L_UpperArm y_diff = 0.28193
+ thug_0 Ragdoll -- Bip01_R_UpperArm y_diff = 0.365204
+ thug_0 Ragdoll -- Bip01_L_Forearm y_diff = 0.416172
+ thug_0 Ragdoll -- Bip01_R_Forearm y_diff = 0.186334
+ Character: thug_2 HandleAnimationTrigger P_NAME = GetUp_Back
+ thug_2 ThugGetUpState: OnAnimationTrigger READY_TO_FIGHT
+ GameObject: HandleSoundFinished end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ Player: player Do--Attack--->
+ Enemy thug_0 diffAngle=124.179 too large (Player::CommonPickEnemy)
+ player enemyAngle=123.422 targetAngle=108.75 diffAngle=-14.6716
+ Enemy thug_1 dist=3.53656 diffAngle=-14.6716 score=35 (Player::CommonPickEnemy)
+ player enemyAngle=113.078 targetAngle=108.75 diffAngle=-4.32768
+ Enemy thug_2 dist=1.91895 diffAngle=-4.32768 score=38 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_2
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 1 diff = 122.059
+ AttackStatePlayer attack toEnenmyDistance = 1.91895(0,7.91895)
+ AttackState Attack bestIndex=1 index_start=0 index_num=7
+ AttackState PlayerAttack dir=1 index=1 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Right_01.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Right_01.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 1 diff = 122.059
+ AttackStatePlayer attack toEnenmyDistance = 1.91895(0,7.91895)
+ AttackState Repeat Attack index index_num=7
+ AttackState Attack bestIndex=2 index_start=0 index_num=7
+ AttackState PlayerAttack dir=1 index=2 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Right_02.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Right_02.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+ Character: thug_1 HandleAnimationTrigger P_NAME = GetUp_Back
+ thug_1 ThugGetUpState: OnAnimationTrigger READY_TO_FIGHT
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from GetUpState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 thinkTime = 0.584819
+ FSM: Change State from GetUpState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from StandState to TurnState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 0
+ thug_2 state=TurnState pick Animations/TG_Combat/135_Turn_Right.ani
+ Motion: InnerStart - Animations/TG_Combat/135_Turn_Right.ani
+ FSM: Change State from StandState to TurnState
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_2 OnDamage!!!
+ thug_2 OnDamage: pos = 2.68329 2.34707 -0.769565 dir = -0.887793 0 0.460244 damage = 22 weak = false
+ thug_2 Creating Blood_Splat decal!
+ Character: thug_2 MakeMeRagdoll
+ Character: thug_2 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from TurnState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 CharacterRagdollState: Enter
+ FSM: Change State from TurnState to RagdollState
+ thug_2 CharacterState (TurnState): OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: velocityRequest = 19.5963 8.72468 -10.159 hitPosition = 2.68329 2.34707 -0.769565
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_33.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ thug_2 Ragdoll ChangeState from 0 to 2
+ thug_2 Ragdoll: SetPhysicsEnabled(true)
+ thug_2 Ragdoll -- Bip01_Head y_diff = 1.44415
+ thug_2 Ragdoll -- BRot y_diff = 0.179876
+ thug_2 Ragdoll -- Bip01_Spine1 y_diff = 0.344929
+ thug_2 Ragdoll -- Bip01_L_Thigh y_diff = 0.18164
+ thug_2 Ragdoll -- Bip01_R_Thigh y_diff = 0.178113
+ thug_2 Ragdoll -- Bip01_L_Calf y_diff = 1.00497
+ thug_2 Ragdoll -- Bip01_R_Calf y_diff = 1.11486
+ thug_2 Ragdoll -- Bip01_L_UpperArm y_diff = 1.20824
+ thug_2 Ragdoll -- Bip01_R_UpperArm y_diff = 1.23592
+ thug_2 Ragdoll -- Bip01_L_Forearm y_diff = 0.46681
+ thug_2 Ragdoll -- Bip01_R_Forearm y_diff = 0.529785
+ Player: player Do--Attack--->
+ Enemy thug_0 diffAngle=163.999 too large (Player::CommonPickEnemy)
+ player enemyAngle=135.293 targetAngle=123.754 diffAngle=-11.5396
+ Enemy thug_1 dist=1.5073 diffAngle=-11.5396 score=37 (Player::CommonPickEnemy)
+ player enemyAngle=117.403 targetAngle=123.754 diffAngle=6.35085
+ Enemy thug_2 dist=-0.0453234 diffAngle=6.35085 score=43 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_2
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 2 diff = -157.243
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=6 index_start=0 index_num=9
+ AttackState PlayerAttack dir=2 index=6 Pick attack motion = Animations/BW_Attack/Attack_Close_Back_05.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Back_05.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 2 diff = -157.243
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Repeat Attack index index_num=9
+ AttackState Attack bestIndex=7 index_start=0 index_num=9
+ AttackState PlayerAttack dir=2 index=7 Pick attack motion = Animations/BW_Attack/Attack_Close_Back_06.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Back_06.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+ GameObject: HandleSoundFinished end
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from GetUpState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.736274
+ FSM: Change State from GetUpState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to TurnState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ MultiMotionState: PickIndex = 0
+ thug_1 state=TurnState pick Animations/TG_Combat/135_Turn_Right.ani
+ Motion: InnerStart - Animations/TG_Combat/135_Turn_Right.ani
+ FSM: Change State from StandState to TurnState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_2 OnDamage!!!
+ thug_2 OnDamage: pos = 4.03889 3.59679 -2.05984 dir = -0.887793 0 0.460244 damage = 22 weak = false
+ thug_2 Creating Blood_Splat decal!
+ Character: thug_2 MakeMeRagdoll
+ Character: thug_2 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RagdollState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 CharacterState (RagdollState): OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: velocityRequest = 12.6478 6.22692 -6.55679 hitPosition = 4.03889 3.59679 -2.05984
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_7.ogg
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ Character: thug_1 HandleAnimationTrigger P_NAME = 135_Turn_Right
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (TurnState): OnAnimationTrigger FOOT_STEP
+ Player: player Do--Attack--->
+ Enemy thug_0 diffAngle=166.858 too large (Player::CommonPickEnemy)
+ player enemyAngle=134.657 targetAngle=126.612 diffAngle=-8.04445
+ Enemy thug_1 dist=1.51424 diffAngle=-8.04445 score=37 (Player::CommonPickEnemy)
+ player enemyAngle=117.403 targetAngle=126.612 diffAngle=9.20938
+ Enemy thug_2 dist=-0.0453234 diffAngle=9.20938 score=43 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_2
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = 14.4271
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=4 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=4 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Forward_04.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Forward_04.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 0 diff = 14.4271
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=3 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=3 Pick attack motion = Animations/BW_Attack/Attack_Close_Weak_Forward_03.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Weak_Forward_03.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+ GameObject: HandleSoundFinished end
+ Character: thug_1 HandleAnimationTrigger P_NAME = 135_Turn_Right
+ thug_1 CharacterState: OnFootStep
+ Character: thug_1 SpawnParticleEffect Particle/SnowExplosionFade.xml duration = 2
+ ObjectKiller: Constructor
+ thug_1 CharacterState (TurnState): OnAnimationTrigger FOOT_STEP
+ AttackState changeSubState from 0 to 1
+ AttackState changeSubState from 1 to 2
+ AttackState thug_2 OnDamage!!!
+ thug_2 OnDamage: pos = 3.48768 3.20819 -0.946366 dir = -0.887793 0 0.460244 damage = 26 weak = false
+ thug_2 Creating Blood_Splat decal!
+ Character: thug_2 MakeMeRagdoll
+ Character: thug_2 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RagdollState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 CharacterState (RagdollState): OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: velocityRequest = 13.7132 8.60178 -7.10913 hitPosition = 3.48768 3.20819 -0.946366
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/impact_16.ogg
+ player GameObject: SetTimeScale: 1.04375
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from TurnState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 thinkTime = 0.666646
+ FSM: Change State from TurnState to StandState
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: HandleSoundFinished end
+ Player: player Do--Attack--->
+ Enemy thug_0 diffAngle=158.704 too large (Player::CommonPickEnemy)
+ player enemyAngle=134.657 targetAngle=118.458 diffAngle=-16.1987
+ Enemy thug_1 dist=1.51424 diffAngle=-16.1987 score=36 (Player::CommonPickEnemy)
+ player enemyAngle=117.403 targetAngle=118.458 diffAngle=1.05513
+ Enemy thug_2 dist=-0.0453234 diffAngle=1.05513 score=44 (Player::CommonPickEnemy)
+ player CommonPicKEnemy-> attackEnemy is thug_2
+ player CommonPicKEnemy() time-cost = 1 ms
+ Player: SetTarget
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState Attack-align r-index = 0 diff = 0.664795
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=5 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=5 Pick attack motion = Animations/BW_Attack/Attack_Close_Forward_02.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Forward_02.ani
+ Player: CheckLastKill() alive=3
+ AttackState Attack-align r-index = 0 diff = 0.664795
+ AttackStatePlayer attack toEnenmyDistance = 0(0,6)
+ AttackState Attack bestIndex=6 index_start=0 index_num=10
+ AttackState PlayerAttack dir=0 index=6 Pick attack motion = Animations/BW_Attack/Attack_Close_Forward_03.ani
+ Motion: InnerStart - Animations/BW_Attack/Attack_Close_Forward_03.ani
+ Player: CheckLastKill() alive=3
+ FSM: Change State from AttackState to AttackState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from StandState to RunState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Motion: InnerStart - Animations/TG_Combat/Run_Forward_Combat.ani
+ FSM: Change State from StandState to RunState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from RunState to AttackState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ AttackState targetDistance=1.43923 punchDist=0.00218868
+ Motion: InnerStart - Animations/TG_Combat/Attack_Kick_02.ani
+ AttackState Thug Pick attack motion = Animations/TG_Combat/Attack_Kick_02.ani
+ FSM: Change State from RunState to AttackState
+ player SetSceneTimeScale:0.1 AttackState changeSubState from 0 to 1
+ player SetSceneTimeScale:1 AttackState changeSubState from 1 to 2
+ AttackState thug_2 OnDamage!!!
+ thug_2 OnDamage: pos = 1.98633 4.02687 -3.62909 dir = -0.887793 0 0.460244 damage = 19 weak = false
+ thug_2 Creating Blood_Splat decal!
+ thug_2 OnDamage HEALTH <= 0
+ Character: thug_2 MakeMeRagdoll
+ Character: thug_2 HandleAnimationTrigger P_NAME = 
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RagdollState to RagdollState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 CharacterState (RagdollState): OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: OnAnimationTrigger RAGDOLL_START
+ thug_2 Ragdoll: velocityRequest = 29.2946 9.52343 -15.1867 hitPosition = 1.98633 4.02687 -3.62909
+ Character: thug_2 OnDead !!!
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 Character: ChangeState from RagdollState to DeadState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_2 ThugDeadState: Enter
+ FSM: Change State from RagdollState to DeadState
+ Character: player SpawnParticleEffect Particle/SnowExplosion.xml duration = 5
+ ObjectKiller: Constructor
+ Character: player SpawnParticleEffect Particle/HitSpark.xml duration = 1
+ ObjectKiller: Constructor
+ player GameObject: PlaySound Sfx/big_4.ogg
+ Player: player killed add to 1
+ player GameObject: SetTimeScale: 1.04813
+ Go: HandleCameraEvent
+ CameraManager: OnCameraEvent 1
+ CameraManager: OnCameraEvent 2
+ CameraController: OnCameraEvent EMPTY
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ thug_0 Ragdoll ChangeState from 2 to 0
+ thug_0 Ragdoll: SetPhysicsEnabled(false)
+ thug_0 Ragdoll: pelvis_up = -0.00132292 0.999997 0.00185587
+ thug_0 Ragdoll: getUpIndex = 0
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ Character: thug_1 HandleAnimationTrigger P_NAME = Attack_Kick_02
+ thug_1 ThugAttackState: OnAnimationTrigger TIME_SCALE
+ thug_1 GameObject: SetTimeScale: 0.3
+ Character: thug_1 HandleAnimationTrigger P_NAME = Attack_Kick_02
+ HeadIndicator: ChangeState to 1
+ thug_1 ThugAttackState: OnAnimationTrigger COUNTER_CHECK add FLAGS_COUNTER
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ GameObject: Kill Node ParticleEffect
+ ObjectKiller: Destructor
+ GameObject: RemoveAllComponents end
+ GameObject: RemoveAllChildren end
+ thug_0 can not be countered
+ thug_2 can not be countered
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ PlayerCounterState: Enter (player) lastState = AttackState
+ PlayerCounter-> counterEnemies len = 1
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from AttackState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 ThugAttackState: Exit to CounterState and remove FLAGS_COUNTER
+ thug_1 GameObject: SetTimeScale: 1
+ HeadIndicator: ChangeState to 0
+ CharacterCounterState: Enter (thug_1) lastState = AttackState
+ FSM: Change State from AttackState to CounterState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from CounterState to CounterState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ CharacterCounterState: GetCounterMotions (player)
+ CharacterCounterState: GetCounterMotions (thug_1)
+ PlayerCounterState: Enter CounterMotions NOT FOUND attackType = 1 isBack = true
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ player Character: ChangeState from AttackState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ Player: SetTarget
+ FSM: Change State from AttackState to StandState
+
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ thug_1 Character: ChangeState from CounterState to StandState
+ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ CharacterCounterState: Exit (thug_1) nextState = StandState
+ thug_1 thinkTime = 0.480308
+ FSM: Change State from CounterState to StandState
+ FSM: Change State from AttackState to CounterState
+ LineWorld: Destructor
+ EnemyManager: Destructor
+ CameraManager: Destructor
+ MotionManager: Destructor
+ GameManager: Destructor
+ GameManager: Finalize
+ MainState: Destructor 
+ LoadingState: Destructor
+ LevelState: Destructor 
+ ObjectKiller: Destructor
+ ObjectKiller: Destructor
+ ObjectKiller: Destructor
+ ObjectKiller: Destructor
+ Follow destructor
